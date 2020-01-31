@@ -9,17 +9,17 @@ export class HeaderComponent implements OnInit {
 
   private feature:string = "recipes";
 
-  @Output() selectedFeature:EventEmitter<string> = new EventEmitter<string>()
+  // @Output() selectedFeature:EventEmitter<string> = new EventEmitter<string>()
 
   constructor() { }
 
   ngOnInit():void {
   }
 
-  featureSelected(feature:string):void
-  {
-    this.feature = feature;
-    this.selectedFeature.emit(this.feature);
-  }
+  // featureSelected(feature:string):void
+  // {
+  //   this.feature = feature;
+  //   this.selectedFeature.emit(this.feature);
+  // }
 
 }
