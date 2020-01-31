@@ -14,7 +14,8 @@ import { BGColor } from './directives/bgColor.directive';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { Route } from '@angular/compiler/src/core';
 import { AppRouting } from './app.routing.module';
-import { RecipeStartComponent } from './recipe-start/recipe-start.component';
+import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { RecipeStartComponent } from './recipe-start/recipe-start.component';
     RecipeItemComponent,
     BGColor,
     DropdownDirective,
-    RecipeStartComponent
+    RecipeStartComponent,
+    RecipeEditComponent
   ],
   imports: [
     BrowserModule,
