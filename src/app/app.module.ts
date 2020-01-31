@@ -14,6 +14,7 @@ import { BGColor } from './directives/bgColor.directive';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { Route } from '@angular/compiler/src/core';
 import { AppRouting } from './app.routing.module';
+import { RecipeStartComponent } from './recipe-start/recipe-start.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AppRouting } from './app.routing.module';
     RecipeDetailComponent,
     RecipeItemComponent,
     BGColor,
-    DropdownDirective
+    DropdownDirective,
+    RecipeStartComponent
   ],
   imports: [
     BrowserModule,
