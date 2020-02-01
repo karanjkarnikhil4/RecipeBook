@@ -2,6 +2,7 @@ import { ShoppingService } from './../shopping-list/shopping.service';
 import { Ingredient } from './../shared/ingredient.model';
 import { EventEmitter, Injectable } from '@angular/core';
 import { Recipe } from './recipe.model';
+import { Subject } from 'rxjs';
 
 @Injectable()
 export class RecipeService
@@ -16,7 +17,8 @@ export class RecipeService
     new Recipe(2,"pizza","special pizza","https://assets.bonappetit.com/photos/5db1ce83358b460009148cb7/3:2/w_1280,c_limit/Basically-Spinach-Tarte-Recipe.jpg",
     [new Ingredient('Meat',1),new Ingredient(' Buns',1)])];
 
-    selectedRecipe:EventEmitter<Recipe> = new EventEmitter<Recipe>();
+    // selectedRecipe:EventEmitter<Recipe> = new EventEmitter<Recipe>();
+    selectedRecipe:Subject<Recipe> = new Subject<Recipe>();
 
     public getRecipes()
     {
